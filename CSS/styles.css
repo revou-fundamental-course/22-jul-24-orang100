@@ -15,8 +15,9 @@ nav {
 }
 
 .nav-item {
-    
+    border: 1px solid;
     padding: 8px;
+    border-radius: 10px;
 }
 
 .main-title {
@@ -28,20 +29,27 @@ nav {
 }
 
 .main-content-item {
-    
+
     width: 100%;
     height: 250px;
     display: flex;
     flex-direction: column;
-    align-items: center
-    
+    align-items: center;
+}
+
+.main-content-item2 {
+    background-color: lightgray;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-content-banner {
     
     width: 100%;
-    height: 140px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR73oz60tYFhaapkWemQ7oggHztiDsuxBoLDQ&s);
+    height: 250px;
 }
 
 .main-item {
@@ -73,4 +81,15 @@ button {
     background-color: gray;
     color: white;
     border: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .header-wrapper {
+        flex-direction: column;
+    }
+    
+    .menu {
+        width: 75%;
+        flex-direction: column;
+    }
 }
